@@ -1,0 +1,33 @@
+{
+  "name": "dbt_bigquery_template",
+  "build": {
+    "context": "..",
+    "dockerfile": "Dockerfile",
+    "args": {
+      "VARIANT": "ubuntu-22.04"
+    }
+  },
+  "remoteUser": "vscode",
+  "mounts": [
+    "source=${localWorkspaceFolder}/.dbt,target=/home/vscode/.dbt,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/.config/gcloud,target=/home/vscode/.config/gcloud,type=bind,consistency=cached"
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dorzey.vscode-sqlfluff",
+        "fivetran.dbt-language-server",
+        "mads-hartmann.bash-ide-vscode",
+        "minodisk.bigquery-runner",
+        "ms-python.python",
+        "ms-python.vscode-pylance"
+      ],
+      "settings": {
+        "sqlfluff.linter.run": "onSave",
+        "sqlfluff.linter.lintEntireProject": true,
+        "sqlfluff.format.arguments": ["--FIX-EVEN-UNPARSABLE"]
+      }
+    }
+  },
+  "postCreateCommand": "./.devcontainer/post_create_commands.sh"
+}
