@@ -9,6 +9,7 @@ RUN echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.
     && export DEBIAN_FRONTEND=noninteractive \
     && apt-get update \
     && apt-get -y install --no-install-recommends \
+    direnv \
     google-cloud-sdk \
     python3-pip \
     python-is-python3 \
