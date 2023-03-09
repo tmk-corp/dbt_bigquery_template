@@ -1,0 +1,26 @@
+fixed:
+  type: bigquery
+  priority: interactive
+  method: oauth
+  threads: 4
+  job_execution_timeout_seconds: 21600
+  job_retries: 1
+prompts:
+  project:
+    type: string
+    hint: 'GCP project name'
+  dataset:
+    type: string
+    hint: 'BigQuery dataset name'
+  _choose_location:
+    US:
+      _fixed_location: US
+    EU:
+      _fixed_location: EU
+  _choose_authentication_method:
+    oauth:
+      _fixed_method: oauth
+    service_account:
+      _fixed_method: service-account
+      keyfile:
+        hint: '/path/to/bigquery/keyfile.json'
