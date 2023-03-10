@@ -19,8 +19,10 @@
         "fivetran.dbt-language-server",
         "mads-hartmann.bash-ide-vscode",
         "minodisk.bigquery-runner",
+        "ms-azuretools.vscode-docker",
         "ms-python.python",
-        "ms-python.vscode-pylance"
+        "ms-python.vscode-pylance",
+        "redhat.vscode-yaml"
       ],
       "settings": {
         "sqlfluff.linter.run": "onSave",
