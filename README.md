@@ -1,5 +1,5 @@
 # dbt_bigquery_template
-A repository template for dbt + BigQuery
+A repository template for dbt + BigQuery + Dev Container.
 
 ## Tools
 
@@ -12,20 +12,19 @@ A repository template for dbt + BigQuery
   - `sql`: [sqlfluff](https://github.com/sqlfluff/sqlfluff)
   - `python`: [black](https://github.com/psf/black)
   - `shell`: [shellcheck](https://github.com/koalaman/shellcheck)
-  - `yaml`: TBD
-  - `json`: TBD
-  - `dockerfile`: TBD
 - Utilities
   - [direnv](https://github.com/direnv/direnv)
   - [pre-commit](https://github.com/pre-commit/pre-commit)
 
 ## VSCode extensions
 
-- [Wizard for dbt Core (TM)](https://marketplace.visualstudio.com/items?itemName=Fivetran.dbt-language-server)
-- [BigQuery Runner](https://marketplace.visualstudio.com/items?itemName=minodisk.bigquery-runner)
-- [sqlfluff](https://marketplace.visualstudio.com/items?itemName=dorzey.vscode-sqlfluff)
 - [Bash IDE](https://marketplace.visualstudio.com/items?itemName=mads-hartmann.bash-ide-vscode)
+- [BigQuery Runner](https://marketplace.visualstudio.com/items?itemName=minodisk.bigquery-runner)
+- [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
 - [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance)
+- [Wizard for dbt Core (TM)](https://marketplace.visualstudio.com/items?itemName=Fivetran.dbt-language-server)
+- [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
+- [sqlfluff](https://marketplace.visualstudio.com/items?itemName=dorzey.vscode-sqlfluff)
 
 ## Getting started
 
