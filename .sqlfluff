@@ -8,8 +8,9 @@ max_line_length = 100
 # L028: References should be consistent in statements with a single table (BQ default: disabled)
 # L031: Avoid table aliases in from clauses and join conditions (BQ default: disabled)
 # L032: Prefer specifying join keys instead of using USING
+# L034: Select wildcards then simple targets before calculations and aggregates.
 # L036: Select targets should be on a new line unless there is only one select target
-exclude_rules = L022,L026,L032,L036
+exclude_rules = L022,L026,L032,L034,L036
 
 [sqlfluff:indentation]
 tab_space_size = 2
