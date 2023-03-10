@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: iris1
+    columns:
+      - name: sepal_length
+        tests:
+          - not_null
+      - name: sepal_width
+        tests:
+          - not_null
+      - name: petal_width
+        tests:
+          - not_null
+      - name: petal_length
+        tests:
+          - not_null
+      - name: species
+        tests:
+          - not_null
