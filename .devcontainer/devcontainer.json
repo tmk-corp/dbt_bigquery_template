@@ -10,7 +10,8 @@
   "remoteUser": "vscode",
   "mounts": [
     "source=${localWorkspaceFolder}/.dbt,target=/home/vscode/.dbt,type=bind,consistency=cached",
-    "source=${localEnv:HOME}/.config/gcloud,target=/home/vscode/.config/gcloud,type=bind,consistency=cached"
+    "source=${localEnv:HOME}/.config/gcloud,target=/home/vscode/.config/gcloud,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/.config/direnv,target=/home/vscode/.config/direnv,type=bind,consistency=cached"
   ],
   "customizations": {
     "vscode": {
