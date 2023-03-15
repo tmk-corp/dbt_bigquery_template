@@ -2,8 +2,10 @@ version: 2
 
 models:
   - name: iris1
+    description: Test description
     columns:
       - name: sepal_length
+        description: Test column description
         tests:
           - not_null
       - name: sepal_width
